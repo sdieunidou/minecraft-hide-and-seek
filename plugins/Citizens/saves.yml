@@ -1,0 +1,105 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 18
+npc:
+  '10':
+    metadata:
+      player-skin-textures: ewogICJ0aW1lc3RhbXAiIDogMTYxNjc5OTcwNjQyOCwKICAicHJvZmlsZUlkIiA6ICJmYzNjNWNmMTUyMTk0OTc5YjI3MWRkMzQ0NGMxZGIxNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJhcG9jYWx5cHNlRlIiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNiNmQyYWQ0MTIxOTdmNTkzNDdhYTVhNDczZDNmZWIxM2ZkOWQ2MGUzZTg5N2RmZTg0NzVhZmNjNWU2NDU1OSIKICAgIH0KICB9Cn0=
+      cached-skin-uuid-name: apocalypsefr
+      cached-skin-uuid: fc3c5cf1-5219-4979-b271-dd3444c1db16
+      player-skin-signature: BGnxQCEzfHDNO6kNV8OuuKfdpmwOg2KdzlECo18dqt4w6PoSxfRXHJGFqdxnprN8p98aKnU6oRO2gti3TH1kTc1X71EvJiqxKQqIbpiQ1clFjd+2uKDxoxWBaJX3hb6p+qgY0ARPPlUJBZveP+nqc0FW57quTk7Nc5JxBm57zK5/DVTeRqVgp4SktO/iwNhqevB1QE/E5dRqhvwB+ri+oih6uGmOkB4XDLNEb39CEqNTQGXcsxpQVfaZqjnAHie6OVJjiKvkJTdAIa0KyaacIzW1IV0r6drxubhu8JLDrBZG5/BAOVEGTFmLFDoL13Jj1ex+C9LwkOsBzq4cHFijR6tuOuoLcrqrHEmQnnNGGgPuEO4EQIeXnRzI8LGS6G5wrMQEoLCZX9JC5mZPXzrQZn/dnCqvflP+bbMLF+7ZsW3w5OJAud5UwS7ADS+nrx9jn4bCJSejDF5IUThEjfoe6Q1pQwNfZhxkR8d31EB5YydSDhkRakTYubmuZi7z/OCNIWLTptyxtk5FJHwKGO0mGM8wYrOwoaFdevvizgoZEogwPGutHMxC9OV0aPkBCGRZgIfcMShZHQvGCe4yClR5jnpG79qYO9VftPiZucOCrvC2LxlOhptDq4GGE8DmzbIppOAViUEKIaJGjzbagSka0cHDoJuKR+cEqyPWY7rHnCI=
+    name: §5apocalypseFR
+    uuid: aaf630cc-0382-4e7b-ad0b-203e195a4ff7
+    traits:
+      spawned: true
+      location:
+        world: world
+        x: '-124.60484264247455'
+        y: '6.0'
+        z: '-74.52051065580036'
+        yaw: '90.42655181884766'
+        pitch: '0.9911103844642639'
+      inventory: {}
+      owner:
+        owner: AirZoma
+        uuid: f368bf04-7b23-3797-b460-6a50546edd66
+    traitnames: location,owner,inventory,spawned,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '9':
+    metadata:
+      player-skin-textures: ewogICJ0aW1lc3RhbXAiIDogMTYxNjc5OTcwNjcxNSwKICAicHJvZmlsZUlkIiA6ICI1ZTg0NzAyYjgyNjc0OTRmOGU5ODBkYmUxY2QwZThiMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJLaWJhX1NhbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84MWRiZWU5MjcyNzQxZjUyNzkwMmI5M2ZlNThjZjk2Y2IwZDZjN2EyNzRjMmI5MTkzMDc4MGM2YzdkZjU1NmJjIgogICAgfQogIH0KfQ==
+      cached-skin-uuid-name: kiba_san
+      cached-skin-uuid: 5e84702b-8267-494f-8e98-0dbe1cd0e8b3
+      player-skin-signature: iRkz4OSujLx/+uTjDxNHQVyC60i5Ee6R/p8J52LtamEX5m4PMqHG++zuh4SXPR81wpGwozj+tAgBMoaSmum8fzp/ZNBjBQ/E9o08nUtbuwb4iZZ/IY0W6I5pTZ8tMZjY8WdujF6cXDswx2FN7gFBQGDXbbDU6BARdH1QqQsQ4KDnBi9bCuU6OxzKbaZJO04QRhZV1ca1aDSVbHxSWnKjYIjsnq7H3HAD8kzXusP2DUb4HSH+XGkvRUAvdhiBldQR+8GA4O9+n6DHPReJyUYaJfV1qaYAm4ru+f3xYCUE+DawvAUT6tFG8rJfDcE88c5EE1t/5n5rAIZ5epfMfwN46bsVkoilQAE5kNZXMeJdc0/Iny6rKBakbjWUkLWsoL8jiUlhnoAVaULOMjeGZMfA10a2ldMP0QR6C9G6LJqP0WkXB3f1FmT9/7OXjd9XyMBTPMEMLo+f//XFwFlM1CoZ4R4M4UEcsQ+XPhqZDADAAlrZYnISpTPWOSH2fQC0Ecup9LuwqJFj8VIX8P40XbCE1oN6znAM2mWhmkwUhiawiS11J6zRXiY2NqfDAASVwCFCi2kc/tNFOOAabmcPn3t9G64RQv9xvHFwKruLGDpG2VkJjsoPspArHg7uHK0I8i19rZ73Qtg8AiupeDKXKV/+YYdxOdEaAB9y7vijYCScPg8=
+    name: §4Kiba_San
+    uuid: e09a9126-60cf-487b-9054-07a31183ee96
+    traits:
+      spawned: true
+      location:
+        world: world
+        x: '-122.63481135720784'
+        y: '6.0'
+        z: '-69.48137613834226'
+        yaw: '90.30107116699219'
+        pitch: '-1.730263113975525'
+      inventory: {}
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      owner:
+        owner: AirZoma
+        uuid: f368bf04-7b23-3797-b460-6a50546edd66
+    traitnames: location,owner,inventory,spawned,text,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '8':
+    metadata:
+      player-skin-textures: ewogICJ0aW1lc3RhbXAiIDogMTYxNjc5OTcwNzIwNiwKICAicHJvZmlsZUlkIiA6ICJiY2M0MjBhNzRkYTc0NjIyYmMxYTIwNjJiNmY4NDMyNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJBaXJab21hIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NkMjcxMDNkM2YzMGI0NjdlYjdjNGFjZTZhMDNlNjBjNTJlYjc3ZjljNDYxY2JjYTJhM2IzM2U1MzMxNGU3ZmMiCiAgICB9CiAgfQp9
+      cached-skin-uuid-name: airzoma
+      cached-skin-uuid: bcc420a7-4da7-4622-bc1a-2062b6f84326
+      player-skin-signature: lf8S3Py0J7B2dNfGuSO30VcBYF6EP2jdNbsSAgNMCPjU6ZrcNfYXNkasgY9zINxQqd/ru3lLsUjjHLNN0Z9s6Ir+GWCxL8cJ+/R0eeuN4OxAXY0gzG9EGJDcrclSTgXU1CYhn+Qps8aL/b+X7ICn3D99mgDizg7XCDVlNTk5AlTye/INxJm5r8fQJ9od5IoIf/m/cQ+7b1wRXIdeCzi2+TLtV5OFehXhzSFCFqezp3jMtJETYqnJjU6def5roRfau/5S84Ydcbg8Krlk/xtUWSWrSXeQkdmibONuKGXs+C4fkRPGtlizUKDPsx7wIGsSY+CgGVSLMF89VNkZWOb0nsCtpWef8uCbAmmCbo5ddsbW5O+4y3WqbMKg7m69/f4VixzFDY3fqVG03v6sGVruONIZktumkCJ44rpkyMT4mS7S2A3V8vfOQX3bfq21MKZEg0xAcMyUGihs4NKjHiBEy/uqkOdzPQO0f5EdyoNdM38EMSwilvdR30r14CBtScYQn/Pbshd+1dLQrTmDHEw9LhBWm6drUI6QwgCszefJ9r0icVDmBadFq+A7mOV1x7L1ShFnkQCi+RWXQ12WhJxz+s87EecolO6t8Ffmjaku8MzAomteTWtn+Lw1qoo9rRTMi/J4lQjsHyahxOJHzTnn66T0yhQZ8RzarbwFmn6rn80=
+      player-skin-name: airzoma
+    name: §bAirZoma
+    uuid: c2d91f35-c4d5-4e12-bf41-03e511cc573f
+    traits:
+      spawned: true
+      location:
+        world: world
+        x: '-124.5684209666373'
+        y: '6.0'
+        z: '-64.50965765818334'
+        yaw: '90.4818115234375'
+        pitch: '-1.604633092880249'
+      inventory: {}
+      text:
+        talk-close: false
+        random-talker: true
+        realistic-looking: false
+        range: '5.0'
+        talkitem: default
+        text:
+          '0': Hi, I'm <npc>!
+      owner:
+        owner: AirZoma
+        uuid: f368bf04-7b23-3797-b460-6a50546edd66
+    traitnames: location,owner,inventory,spawned,text,type
+    navigator:
+      pathfindingrange: '25.0'
+      stationaryticks: -1
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

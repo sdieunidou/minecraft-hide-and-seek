@@ -1,0 +1,2 @@
+on break of painting:
+	cancel event

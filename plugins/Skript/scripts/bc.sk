@@ -1,0 +1,17 @@
+command /bc [<text>]:
+	permission: bc.sk
+	permission message: &cErreur tu n'as pas la permission
+	trigger:
+		if arg-1 is not set:
+			send "&cErreur tu dois préciser un message"
+		else:
+			broadcast "[&6&lServeur&r] &6%colored arg-1%"
+
+command /broadcast [<text>]:
+	permission: bc.sk
+	permission message: &cErreur tu n'as pas la permission
+	trigger:
+		if arg-1 is not set:
+			send "&cErreur tu dois préciser un message"
+		else:
+			make player execute command "bc %arg-1%"

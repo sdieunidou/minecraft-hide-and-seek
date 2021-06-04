@@ -1,0 +1,34 @@
+command /boost [<number>]:
+	permission: *
+	trigger:
+		if arg-1 is set:
+			if player is "Kiba_San":
+				set {boost} to arg-1
+				set {booster} to player
+				loop all players:
+					display "&f| &6x%{boost}% Boost &epar %{booster}% &f|" on bossbar with 100 percent by 999999 seconds for loop-player
+			else:
+				if arg-1 < 3:
+					set {boost} to arg-1
+					set {booster} to player
+					loop all players:
+						display "&f| &6x%{boost}% Boost &epar %{booster}% &f|" on bossbar with 100 percent by 999999 seconds for loop-player
+
+				else:
+					send "&cHé hé hé, maintenant tu ne peux pas plus de 2"
+		else:
+			send "&cErreur, tu dois préciser un nombre"
+				
+
+
+on join:
+	if {boost} is set:
+		display "&f| &6x%{boost}% Boost &epar %{booster}% &f|" on bossbar with 100 percent by 999999 seconds for player
+
+command /unboost:
+	permission: *
+	trigger:
+		loop all players:
+			remove bossbar from loop-player
+		clear {boost}
+		clear {booster}

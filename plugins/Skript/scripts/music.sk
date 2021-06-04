@@ -1,0 +1,87 @@
+options:
+	pref: &2&lMusique >&a
+
+command /music [<text>]:
+	trigger:
+		if arg-1 is not set:
+			wait 1 tick
+			open chest with 2 rows named "&dMusique" to player
+			wait 1 tick
+			format slot 0 of player with 2256 named "&cFairy Tail Theme" with lore " " to close then run [make player execute command "/music Fairy Tail Theme"]
+			format slot 1 of player with 2257 named "&cAnimals" with lore " " to close then run [make player execute command "/music Animals"]
+			format slot 2 of player with 2258 named "&cEverybody Dance Now" with lore " " to close then run [make player execute command "/music Everybody Dance Now"]
+			format slot 3 of player with 2259 named "&cLet It Be" with lore " " to close then run [make player execute command "/music Let It Be"]
+			format slot 4 of player with 2260 named "&cMortalKombat" with lore " " to close then run [make player execute command "/music MortalKombat"]
+			format slot 5 of player with 2261 named "&cPokemon Red-Blue Title" with lore " " to close then run [make player execute command "/music Pokemon Red-Blue Title"]
+			format slot 6 of player with 2262 named "&cTake On Me" with lore " " to close then run [make player execute command "/music Take On Me"]
+			format slot 7 of player with 2263 named "&cThe Final Countdown" with lore " " to close then run [make player execute command "/music The Final Countdown"]
+			format slot 8 of player with barrier named "&4Stop" with lore " " to close then run [make player execute command "/stopmusic"]
+			format slot 13 of player with note block named "&aMusique en boucle" with lore " " to close then run [make player execute command "/musicshuffle"]
+		if arg-1 is set:
+			if nbs song "%arg-1%" exist:
+				nbs play song "%arg-1%" to player
+				send "{@pref} Joue maintenant '%arg-1%'"
+			else:
+				send "{@pref} &cErreur, mauvais titre de musique"
+
+command /musicshuffle [<text>]:
+	trigger:
+		if arg-1 is not set:
+			wait 3 ticks
+			open chest with 1 rows named "&dMusique (en boucle)" to player
+			wait 1 tick
+			format slot 0 of player with 2256 named "&cFairy Tail Theme" with lore " " to close then run [make player execute command "/musicshuffle Fairy Tail Theme"]
+			format slot 1 of player with 2257 named "&cAnimals" with lore " " to close then run [make player execute command "/musicshuffle Animals"]
+			format slot 2 of player with 2258 named "&cEverybody Dance Now" with lore " " to close then run [make player execute command "/musicshuffle Everybody Dance Now"]
+			format slot 3 of player with 2259 named "&cLet It Be" with lore " " to close then run [make player execute command "/musicshuffle Let It Be"]
+			format slot 4 of player with 2260 named "&cMortalKombat" with lore " " to close then run [make player execute command "/musicshuffle MortalKombat"]
+			format slot 5 of player with 2261 named "&cPokemon Red-Blue Title" with lore " " to close then run [make player execute command "/musicshuffle Pokemon Red-Blue Title"]
+			format slot 6 of player with 2262 named "&cTake On Me" with lore " " to close then run [make player execute command "/musicshuffle Take On Me"]
+			format slot 7 of player with 2263 named "&cThe Final Countdown" with lore " " to close then run [make player execute command "/musicshuffle The Final Countdown"]
+		else:
+			if nbs song "%arg-1%" exist:
+				set {musicstate.%player%} to arg-1
+				nbs play song "%arg-1%" to player
+				send "{@pref} Joue maintenant '%arg-1%'"
+				wait 3 minutes
+				if player is online:
+					if {musicstate.%player%} is arg-1:
+						make player execute command "/musicshuffle %arg-1%"
+					else:
+						make player execute command "/musicshuffle %{musicstate.%player%}%"
+				else:
+					stop
+			else:
+				send "{@pref} &cErreur, mauvais titre de musique"
+
+command /musicall [<text>]:
+	permission: *
+	trigger:
+		if arg-1 is not set:
+			wait 1 tick
+			open chest with 2 rows named "&dMusique" to player
+			wait 1 tick
+			format slot 0 of player with 2256 named "&cFairy Tail Theme" with lore " " to close then run [make player execute command "/musicall Fairy Tail Theme"]
+			format slot 1 of player with 2257 named "&cAnimals" with lore " " to close then run [make player execute command "/musicall Animals"]
+			format slot 2 of player with 2258 named "&cEverybody Dance Now" with lore " " to close then run [make player execute command "/musicall Everybody Dance Now"]
+			format slot 3 of player with 2259 named "&cLet It Be" with lore " " to close then run [make player execute command "/musicall Let It Be"]
+			format slot 4 of player with 2260 named "&cMortalKombat" with lore " " to close then run [make player execute command "/musicall MortalKombat"]
+			format slot 5 of player with 2261 named "&cPokemon Red-Blue Title" with lore " " to close then run [make player execute command "/musicall Pokemon Red-Blue Title"]
+			format slot 6 of player with 2262 named "&cTake On Me" with lore " " to close then run [make player execute command "/musicall Take On Me"]
+			format slot 7 of player with 2263 named "&cThe Final Countdown" with lore " " to close then run [make player execute command "/musicall The Final Countdown"]
+			format slot 8 of player with barrier named "&4Stop" with lore " " to close then run [make player execute command "/stopmusic"]
+		if arg-1 is set:
+			if nbs song "%arg-1%" exist:
+				loop all players:
+					nbs play song "%arg-1%" to loop-player
+				broadcast "{@pref} Joue maintenant '%arg-1%' &7( vous pouvez l'arrêter en faisant /stopmusic )"
+			else:
+				send "{@pref} &cErreur, mauvais titre de musique"
+
+		
+		
+
+command /stopmusic:
+	trigger:
+		nbs stop playing song to player
+		clear {musicstate.%player%}

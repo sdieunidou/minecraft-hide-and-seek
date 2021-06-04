@@ -1,0 +1,13 @@
+usercache.json
+ops.json
+banned-ips.json
+banned-players.json
+eula.txt
+whitelist.json
+*.log
+*/playerdata/
+/plugins/MaxBans/immunities.txt
+/plugins/Essentials/userdata/*.yml
+/plugins/GroupManager/worlds/world/users.yml
+/plugins/NametagEdit/players.yml
+/world/stats/*.json

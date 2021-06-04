@@ -1,0 +1,14 @@
+on command "/tell":
+	cancel event
+
+on command "/minecraft:tell":
+	cancel event
+
+on command "/me":
+	cancel event
+
+on command "/minecraft:me":
+	cancel event
+
+on command "//calc":
+	cancel event

@@ -1,0 +1,89 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.2-Fixes-V8b
+
+cooldown.sousfifre, double, 4000000000000000
+game, string, 800777616974696E67
+spawn, location, 8605776F726C6480FF0000000181046E616D65208005776F726C640178093FDF992F193A05EC0179094024000000000000017A09C0108117EA4B255705706974636808C0BF45DB0379617708C33392E0
+spawnh, location, 8605776F726C6480FF0000000181046E616D65208005776F726C64017809402575A7543BF3060179094026000000000000017A09402C8C612B4F4424057069746368083F9EF6F203796177083EE69446
+spec.<none>, boolean, 01
+spec.darky44, boolean, 01
+spec.kiba_san, boolean, 01
+spec.kweks, boolean, 01
+spec.melie_chan, boolean, 01
+spec.neyylo, boolean, 01
+spec.poivre_, boolean, 01
+spec.sacry_chan, boolean, 01
+totalgames.0hnovel_, double, 4028000000000000
+totalgames._milkaaa_, double, 4010000000000000
+totalgames.abrxcot, double, 4030000000000000
+totalgames.alay_, double, 4014000000000000
+totalgames.bzebze_, long, 0000000000000000
+totalgames.darky44, double, 401C000000000000
+totalgames.dictateur_mousta, double, 4008000000000000
+totalgames.hhjardz, long, 0000000000000000
+totalgames.kiba_san, double, 403C000000000000
+totalgames.kibalab, double, 4033000000000000
+totalgames.kweks, double, 4008000000000000
+totalgames.loulougaming, double, 4014000000000000
+totalgames.lucas9433, long, 0000000000000000
+totalgames.mackao, double, 4000000000000000
+totalgames.melie_chan, double, 4014000000000000
+totalgames.neyylo, double, 4022000000000000
+totalgames.poivre_, double, 4014000000000000
+totalgames.sacry_chan, double, 4018000000000000
+totalgames.sousfifre, double, 401C000000000000
+totalgames.vnxthebest, double, 4018000000000000
+wins.hider.0hnovel_, double, 401C000000000000
+wins.hider._milkaaa_, double, 4000000000000000
+wins.hider.abrxcot, double, 4018000000000000
+wins.hider.alay_, double, 4010000000000000
+wins.hider.bzebze_, long, 0000000000000000
+wins.hider.darky44, double, 4008000000000000
+wins.hider.dictateur_mousta, double, 4008000000000000
+wins.hider.hhjardz, long, 0000000000000000
+wins.hider.kiba_san, double, 4026000000000000
+wins.hider.kibalab, double, 4018000000000000
+wins.hider.kweks, long, 0000000000000000
+wins.hider.loulougaming, double, 3FF0000000000000
+wins.hider.lucas9433, long, 0000000000000000
+wins.hider.mackao, long, 0000000000000000
+wins.hider.melie_chan, double, 4008000000000000
+wins.hider.neyylo, double, 4000000000000000
+wins.hider.poivre_, double, 4010000000000000
+wins.hider.sacry_chan, double, 4000000000000000
+wins.hider.sousfifre, double, 3FF0000000000000
+wins.hider.vnxthebest, double, 4000000000000000
+wins.hunter.0hnovel_, long, 0000000000000000
+wins.hunter.<none>, long, 0000000000000001
+wins.hunter._milkaaa_, long, 0000000000000000
+wins.hunter.abrxcot, double, 3FF0000000000000
+wins.hunter.alay_, long, 0000000000000000
+wins.hunter.bzebze_, long, 0000000000000000
+wins.hunter.darky44, double, 3FF0000000000000
+wins.hunter.dictateur_mousta, long, 0000000000000000
+wins.hunter.hhjardz, long, 0000000000000000
+wins.hunter.kiba_san, double, 4008000000000000
+wins.hunter.kibalab, double, 4010000000000000
+wins.hunter.kweks, long, 0000000000000000
+wins.hunter.loulougaming, long, 0000000000000000
+wins.hunter.lucas9433, long, 0000000000000000
+wins.hunter.mackao, long, 0000000000000000
+wins.hunter.melie_chan, double, 3FF0000000000000
+wins.hunter.neyylo, double, 3FF0000000000000
+wins.hunter.poivre_, long, 0000000000000000
+wins.hunter.sacry_chan, double, 3FF0000000000000
+wins.hunter.sousfifre, double, 3FF0000000000000
+wins.hunter.vnxthebest, double, 4000000000000000
+
+game, string, 800777616974696E67
+game, string, 800777616974696E67
+spec.bzebze_, null, 
+spec.panda_thox, null, 
+totalgames.panda_thox, long, 0000000000000000
+wins.hunter.panda_thox, long, 0000000000000000
+wins.hider.panda_thox, long, 0000000000000000
+spec.kiba_san, null, 
+spec.lucas9433, null, 
+spec.kiba_san, null, 

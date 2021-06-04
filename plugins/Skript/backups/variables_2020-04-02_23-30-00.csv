@@ -1,0 +1,37 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.2-Fixes-V8b
+
+cooldown.sousfifre, double, 4000000000000000
+game, string, 800866696E6973686564
+spawn, location, 8605776F726C6480FF0000000181046E616D65208005776F726C640178093FDF992F193A05EC0179094024000000000000017A09C0108117EA4B255705706974636808C0BF45DB0379617708C33392E0
+spawnh, location, 8605776F726C6480FF0000000181046E616D65208005776F726C64017809402575A7543BF3060179094026000000000000017A09402C8C612B4F4424057069746368083F9EF6F203796177083EE69446
+spec.<none>, boolean, 01
+spec.darky44, boolean, 01
+spec.neyylo, boolean, 01
+spec.sousfifre, boolean, 01
+totalgames.abrxcot, double, 402A000000000000
+totalgames.darky44, double, 4008000000000000
+totalgames.kiba_san, double, 4032000000000000
+totalgames.kibalab, double, 402E000000000000
+totalgames.loulougaming, double, 4014000000000000
+totalgames.neyylo, double, 4022000000000000
+totalgames.sousfifre, double, 401C000000000000
+wins.hider.abrxcot, double, 4010000000000000
+wins.hider.darky44, double, 3FF0000000000000
+wins.hider.kiba_san, double, 4014000000000000
+wins.hider.kibalab, double, 4010000000000000
+wins.hider.loulougaming, double, 3FF0000000000000
+wins.hider.neyylo, double, 4000000000000000
+wins.hider.sousfifre, double, 3FF0000000000000
+wins.hunter.<none>, long, 0000000000000001
+wins.hunter.abrxcot, double, 3FF0000000000000
+wins.hunter.darky44, double, 3FF0000000000000
+wins.hunter.kiba_san, double, 4008000000000000
+wins.hunter.kibalab, double, 4010000000000000
+wins.hunter.loulougaming, long, 0000000000000000
+wins.hunter.neyylo, double, 3FF0000000000000
+wins.hunter.sousfifre, double, 3FF0000000000000
+
+game, string, 800777616974696E67

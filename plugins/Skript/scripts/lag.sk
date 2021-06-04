@@ -1,0 +1,18 @@
+command /lag:
+	trigger:
+		send "&7------------------------------------"
+		send "&cServeur - %server name%"
+		send " "
+		send "&6Serveur: &e%tps%&6/&e20 ms"
+		send "&6Toi: &e%ping of player% ms"
+		send " "
+		send "&7------------------------------------"
+
+command /ping [<player>]:
+	trigger:
+		if arg-1 is not set:
+			set {_ping} to player's ping
+			send "&aLa latence avec le serveur &6%{_ping}% &ams" to player
+		if arg-1 is set:
+			set {_ping_} to arg-1's ping
+			send "&aLa latence avec le serveur de &e%arg-1% &aest de &6%{_ping_}%&a ms"

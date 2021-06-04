@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+command //calc:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+
+
+
+
+
+
+command //calculate:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+
+
+
+
+command /pl:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+
+
+
+
+command /bukkit:pl:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+
+
+
+
+command /ver:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+command /version:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+command /bukkit:ver:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+command /bukkit:version:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /minecraft:me:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /minecraft:tell:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /plugins:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /worldedit:/solve:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /worldedit:/calc:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /Help:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /?:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /Restart:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /about:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+command /Test:
+	trigger:
+		message "&e\ ! / &cCommande interdite sur &aServeur &e\ ! /"
+
+

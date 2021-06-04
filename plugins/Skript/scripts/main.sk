@@ -1,0 +1,92 @@
+options:
+	pref: &c&lCubika >&7
+
+on load:
+	set {game} to "waiting"
+
+on join:
+	set player's gamemode to adventure
+	clear player's inventory
+	if {game} is not "started" or "finished":
+		clear {spec.%player%}
+		make console execute command "/nte player %player% prefix &a"
+		set {_count} to 0
+		loop all players:
+			add 1 to {_count}
+		if player is "Kiba_San":
+			set join message to "&7[&a+&7] &c%player% &8(&7%{_count}%/%max players%&8)"
+		else:
+			set join message to "&7[&a+&7] %player% &8(&7%{_count}%/%max players%&8)"
+		else:
+			set join message to ""
+		execute console command "/tabrefresh"
+		teleport player to {spawn}
+		set {_count} to 0
+		loop all players:
+			add 1 to {_count}
+		if {_count} > 3:
+			if {game} is not "started" or "starting":
+				make console execute command "/cache start"
+		else:
+			broadcast "{@pref} il manque %4 - {_count}% joueurs pour commencer la partie"
+	else if {game} is "finished":
+		set join message to ""
+		send "&cErreur, la partie se relance"
+		wait 0.5 seconds
+		bungeecord connect player to "lobby"
+	else:
+		teleport player to {spawn}
+		set join message to ""
+		make console execute command "/cache spec %player%"
+
+
+command /hub:
+	trigger:
+		bungeecord connect player to "lobby"
+
+command /lobby:
+	trigger:
+		bungeecord connect player to "lobby"
+
+
+
+on quit:
+	if {game} is not "started" or "finished":
+		set {_count} to 0
+		loop all players:
+				add 1 to {_count}
+		if player is "Kiba_San" or "ImStriiX":
+			set quit message to "&7[&c-&7] &c%player% &8(&7%{_count} - 1%/%max players%&8)"
+		else:
+			set quit message to "&7[&c-&7] %player% &8(&7%{_count} - 1%/%max players%&8)"
+	else:
+		set quit message to ""
+	wait 1 second
+	execute console command "/tabrefresh"
+
+command /tabrefresh:
+	aliases: tlr
+	permission: skript.beautifultablist
+	executable by: console and players
+	trigger:
+		set {_count} to 0
+		loop all players:
+			add 1 to {_count}
+		loop all players:
+			set tab header to "&f&k!!&f &cBienvenue sur &6Cubika &f&k!!&f %nl%%loop-player% %nl% &5" and footer to "&5 %nl%&3Serveur: &b%server name% %nl%&7&oEn Jeu: &a%{_count}%&7/&a%max players%" for loop-player
+			wait 1 tick
+		if command sender is not console:
+			message "&bRaffraichissement des tabLists terminé avec succès." to the command sender
+
+command /setspawn [<text>]:
+	permission: *
+	trigger:
+		if arg-1 is "main":
+			set {spawn} to location of player
+			send "{@pref} spawn set en %{spawn}%"
+		if arg-1 is "spawnc":
+			set {spawnc} to location of player
+			send "{@pref} spawn set en %{spawnc}%"
+		if arg-1 is "spawnh":
+			set {spawnh} to location of player
+			send "{@pref} spawn du hunter set en %{spawnh}%"

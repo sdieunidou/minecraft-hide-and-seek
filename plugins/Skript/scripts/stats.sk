@@ -1,0 +1,20 @@
+command /stats [<player>]:
+	trigger:
+		if arg-1 is not set:
+			make player execute command "/stats %player%"
+		else:
+			send "&7&m-----------&r&d Stats de %arg-1% &7&m-----------"
+			send " "
+			send "&7Total wins: &d%{winshunter.%arg-1%} + {winshider.%arg-1%}%"
+			send "&7Parties joués: &d%{totalgames.%arg-1%}%"
+			send " "
+			send "&7Wins en Chasseur: &c%{winshunter.%arg-1%}%"
+			send "&7Wins en Caché: &a%{winshider.%arg-1%}%"
+			send " "
+			send "&7&m--------------------------------------"
+
+on join:
+	if {totalgames.%player%} is not set:
+		set {totalgames.%player%} to 0
+		set {winshunter.%arg-1%} to 0
+		set {winshider.%arg-1%} to 0

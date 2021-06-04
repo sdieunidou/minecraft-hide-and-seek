@@ -1,0 +1,254 @@
+options:
+	pref: &c&lCubika >&7
+
+command /cache [<text>] [<player>]:
+	trigger:
+		if arg-1 is "start":
+			if {game} is not "started" or "starting":
+				set {game} to "starting"
+				set {_count} to 60
+				loop 60 times:
+					if {_count} is 60 or 30 or 20 or 15 or 10 or 5 or 4 or 3 or 2 or 1:
+						broadcast "{@pref} Le jeu commence dans %{_count}% secondes"
+					remove 1 from {_count}
+					wait 1 second
+				set {_count} to 0
+				loop all players:
+					add 1 to {_count}
+				if {_count} < 2:
+					broadcast "{@pref} &cErreur, pas assez de joueurs"
+					set {game} to "waiting"
+					stop
+				set {_count} to 0
+				loop all players:
+					add 1 to {_count}
+				if {_count} > 1:
+					if {game} is not "started":
+						set {playercount} to {_count}
+						loop all players:
+							add loop-player to {_random::*}
+						if {hider} is not set:
+							set {hider} to a random element of {_random::*}
+						make console execute command "/nte player %{hider}% prefix &c"
+						broadcast "{@pref} Le chasseur est &c&l%{hider}%&r&7, il arrive dans 2 minutes"
+						loop all players:
+							if loop-player is {hider}:
+								teleport loop-player to {spawnh}
+							else:
+								set slot 4 of loop-player to green music disc named "&aFaire du son" with lore " "
+								teleport loop-player to {spawnc}
+						wait 5 ticks
+						if {hider} is set:
+							teleport {hider} to {spawnh}
+							hide all players to {hider}
+						else:
+							make console execute command "/cache stop"
+							stop
+						set {game} to "started"
+						wait 1 minute
+						broadcast "{@pref} Le chasseur arrive dans 1 minute"
+						wait 30 seconds
+						broadcast "{@pref} Le chasseur arrive dans 30 secondes"
+						wait 25 seconds
+						set {_count} to 5
+						loop 5 times:
+							if {game} is "started":
+								if {_count} is 5 or 4 or 3 or 2 or 1:
+									broadcast "{@pref} Le chasseur arrive dans %{_count}% secondes"
+								remove 1 from {_count}
+								wait 1 second
+							else:
+								stop trigger
+						broadcast "&4Sneak pour pas qu'il ne te voit"
+						apply speed 2 to {hider} for 15 minutes
+						if {hider} is set:
+							teleport {hider} to {spawnc}
+							loop all players:
+								if {spec.%loop-player%} is not set:
+									reveal loop-player to {hider}
+						else:
+							make console execute command "/cache stop"
+							stop
+						if {playercount} < 7:
+							set {_count} to 10
+							loop 10 times:
+								if {game} is "started":
+									broadcast "{@pref} La partie finie dans %{_count}% minutes"
+									remove 1 from {_count}
+									wait 1 minute
+								else:
+									stop trigger
+						else:
+							set {_count} to 15
+							loop 15 times:
+								if {game} is "started":
+									broadcast "{@pref} La partie finie dans %{_count}% minutes"
+									remove 1 from {_count}
+									wait 1 minute
+								else:
+									stop trigger
+						set {_count} to 5
+						loop 5 times:
+							broadcast "{@pref} La partie finie dans %{_count}% secondes"
+							remove 1 from {_count}
+							wait 1 seconds
+						make console execute command "/cache stop"
+				else:
+					broadcast "{@pref} &cErreur, pas assez de joueurs"
+					set {game} to "waiting"
+			else:
+				send "&cErreur, la partie est d�j� commencée"
+		if arg-1 is "stop":
+			if {playercount} > 1:
+				broadcast "{@pref} Les &a&lCachés &7ont gagnés"
+				loop all players:
+					if loop-player is not {hider}:
+						if {spec.%loop-player%} is not set:
+							set {_randum} to a random integer between 1 and 3
+							if {boost} is set:
+								set {_randum} to {_randum} * {boost}
+							add {_randum} to {coins.%loop-player%}
+							add 1 to {winshider.%loop-player%}
+							send "&e----------------------------------" to loop-player
+							send "&6Tu as gagné &a+%{_randum}% Bambou(s)" to loop-player
+							send "&6Gagner en tant que &aCaché" to loop-player
+							if {boost} is set:
+								send "&6x%{boost}% Boost &epar %{booster}%" to loop-player
+							send "&e----------------------------------" to loop-player
+
+			else:
+				broadcast "{@pref} Le &c&lChasseur &7a gagné"
+				set {_randum} to a random integer between 3 and 5
+				if {boost} is set:
+					set {_randum} to {_randum} * {boost}
+				add {_randum} to {coins.%{hider}%}
+				add 1 to {winshunter.%{hider}%}
+				send "&e----------------------------------" to {hider}
+				send "&6Tu as gagné &a+%{_randum}% Bambou(s)" to {hider}
+				if {boost} is set:
+					send "&6x%{boost}% Boost &epar %{booster}%" to {hider}
+				send "&6Gagner en tant que &cChasseur" to {hider}
+				send "&e----------------------------------" to {hider}
+			loop all players:
+				add 1 to {totalgames.%loop-player%}
+				clear loop-player's inventory
+				clear {cooldown.%loop-player%}
+			remove speed from {hider}
+			clear {hider}
+			clear {playercount}
+			teleport all players to {spawnc}
+			clear {boost}
+			clear {booster}
+			set {game} to "finished"
+			wait 5 seconds
+			loop all players:
+				bungeecord connect loop-player to "lobby"
+			wait 2 seconds
+			make console execute command "/stop"
+		if arg-1 is "spec":
+			if arg-2 is set:
+				set {spec.%arg-2%} to true
+				make console execute command "/nte player %arg-2% prefix &7"
+				hide arg-2 to all players
+				set {_p} to arg-2
+				loop all players:
+					if {spec.%loop-player%} is set:
+						reveal loop-player to {_p}
+						reveal {_p} to loop-player
+				set arg-2's flight mode to true
+				teleport arg-2 to {spawnc}
+				clear {cooldown.%arg-2%}
+				send "&7Tu peux te tp aux autres via la commande /tpto player" to arg-2
+				set slot 4 of arg-2 to air
+
+
+on rightclick with green music disc:
+	if name of player's tool is "&aFaire du son":
+		make player execute command "/�sound"
+
+on rightclick with clock:
+	if name of player's tool is "&cTP":
+		make player execute command "/�tpto"
+
+on rightclick:
+	if {spec.%player%} is set:
+		cancel event
+
+on inventory click:
+	if player is not op:
+		cancel event
+
+
+command /tpto [<player>]:
+	trigger:
+		if {spec.%player%} is set:
+			teleport player to arg-1
+		else:
+			send "&cErreur tu ne peux pas, tu n'es pas en spectateur"
+
+command /�sound:
+	trigger:
+		if {cooldown.%player%} is not set:
+			play raw sound "mob.bat.death" at player with pitch 1 volume 1
+			set {cooldown.%player%} to 10
+			loop 10 times:
+				wait 1 seconds
+				remove 1 from {cooldown.%player%}
+			clear {cooldown.%player%}
+		else:
+			send "&cErreur tu dois attendre %{cooldown.%player%}% secondes"
+
+on drop:
+	if player doesn't have permission "*":
+		cancel event
+	else:
+		stop
+
+on hunger meter change:
+	cancel event
+
+on weather change:
+	cancel event
+
+on quit:
+	set player's flight mode to false
+	if player is {hider}:
+		make console execute command "/cache stop"
+	if {game} is "started":
+		if {spec.%player%} is not set:
+			remove 1 from {playercount}
+			if {playercount} = 1:
+				make console execute command "/cache stop"
+
+
+on damage:
+	cancel event
+	if attacker is {hider}:
+		if victim is a player:
+			if {game} is "started":
+				if {spec.%victim%} is not set:
+					set {spec.%victim%} to true
+					make console execute command "/cache spec %victim%"
+					remove 1 from {playercount}
+					broadcast "{@pref} &l%victim% &r&7à été trouvé"
+					if {playercount} = 1:
+						make console execute command "/cache stop"
+
+command /debugc [<text>] [<text>]:
+	permission: *
+	trigger:
+		if arg-1 is "game":
+			if arg-2 is set:
+				set {game} to arg-2
+				send "%{game}%"
+
+command /debugs:
+	trigger:
+		clear {cooldown.%player%}
+
+command /debugh [<player>]:
+	permission: *
+	trigger:
+		if arg-1 is set:
+			set {hider} to arg-1
+		send "%{hider}%"

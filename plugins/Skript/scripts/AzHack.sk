@@ -1,0 +1,124 @@
+on command "//calc":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/immune":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/say":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+
+on command "//calculate":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/?":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "//eval":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "//evaluate":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "//":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "//solve":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/ver":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/worldedit:/calc":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+		
+on command "/bukkit:pl":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/bukkit:plugins":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/worldedit:/calculate":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/worldedit:/eval":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/worldedit:/evaluate":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/worldedit:/solve":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/about":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/pl":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/plugins":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/bukkit:?":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/bukkit:about":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/bukkit:help":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/bukkit:ver":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+	
+on command "/bukkit:version":
+	cancel the event
+	send "&4&lErreur > &cCette commande n'est pas autorisée !"
+
+on command "/powertool tnt":
+	cancel the event
+	send "&4&lErreur > &cCette commande est interdite !"
+
+on command "/powertool fireball":
+	cancel the event
+	send "&4&lErreur > &cCette commande est interdite !"
+
+on command "/powertool nuke":
+	cancel the event
+	send "&4&lErreur > &cCette commande est interdite !"
+
+on command "/tnt":
+	cancel the event
+	send "&4&lErreur > &cCette commande est interdite !"
+	
+on command "/nuke":
+	cancel the event
+	send "&4&lErreur > &cCette commande est interdite !"
+
+on command "/bukkit:ver":
+	cancel the event
+	send "&4&lErreur > &cCette commande est interdite !"

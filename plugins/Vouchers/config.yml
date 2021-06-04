@@ -1,0 +1,50 @@
+Vouchers:
+  #Please use These Arguments
+  #For the Player who uses the Voucher %Player%
+  #Use %Arg% for your Arguments
+  #%Arg% is the First Line on the Voucher
+  #Command /Voucher <Type> <Argument>
+  #Money would be the <Type>
+  #So if you do /Voucher &a&lMoney &6$1000
+  #Money is the Type and $1000 is the %Arg%
+  Money:
+    VoucherName: '&7&l>>&a&lMoney Voucher&7&l<<' #The Custom name of the Voucher Item
+    Lore: #Have a custom lore for your Vouchers
+      - '&3You have won &6$%Arg%&3.'
+      - '&6P.S. &eDont spend it all in one place'
+    #Command will be the Command Fired to the Player.
+    Commands:
+      - 'Eco give %Player% %Arg%'
+      - 'broadcast &4%player% &3has just won &6$%arg%'
+    #Message is the Message sent to the player when they Use the Voucher.
+    Message: '&3You have Won &6$%Arg%'
+    #The type of Item the Voucher Will Be.
+    VoucherType: '339'
+    #If the it checks if the Player has permission to use the Voucher.
+    VoucherPermOn/Off: true
+    #The Voucher's Perm Voucher.<VoucherPerm>
+    VoucherPerm: Money
+    #Turn on an off the Limiter.
+    VoucherLimitToggle: false
+    #The Limit of how many times a player can use it.
+    VoucherLimit: 10
+    #Turn on and off the sound when the voucher is used.
+    SoundToggle: true
+    #1.8 sounds are found here: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html
+    #1.9 sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+    Sound: 'UI_BUTTON_CLICK' #This is a 1.9 sound. Make sure to change it to CLICK if you are on 1.8
+  RankUp:
+    VoucherName: '&7&l>>&5&lRankUp Voucher&7&l<<'
+    Lore:
+      - '&c&lRight click to Rank Up.'
+      - '&4&lRank &7&l>> &e&l%Arg%'
+    Commands:
+      - 'Pex user %Player% group set %Arg%'
+    Message: '&3You have Ranked Up to &c%Arg%&3.'
+    VoucherType: '339'
+    VoucherPermOn/Off: false
+    VoucherPerm: RankUp
+    VoucherLimitToggle: false
+    VoucherLimit: 10
+    SoundToggle: true
+    Sound: 'UI_BUTTON_CLICK'

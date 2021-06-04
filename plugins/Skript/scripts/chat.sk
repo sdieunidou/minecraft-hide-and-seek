@@ -1,0 +1,14 @@
+on script load:
+	load non-relative yaml "/home/Minecraft/Hub/plugins/yaml/rank.yml" as "/home/Minecraft/Hub/plugins/yaml/rank.yml"
+	load non-relative yaml "/home/Minecraft/Hub/plugins/yaml/cachestats.yml" as "/home/Minecraft/Hub/plugins/yaml/cachestats.yml"
+
+
+on chat:
+	cancel event
+	if {spec.%player%} is not set:
+		broadcast "&7[&d%{_totalwins}%&7] %player%&f: %message%"
+	else:
+		loop all players:
+			if {spec.%loop-player%} is set:
+				send "&7[&d%{_totalwins}%&7] &7(SPEC) %{_rank}% %player%&f: %message%" to loop-player
+

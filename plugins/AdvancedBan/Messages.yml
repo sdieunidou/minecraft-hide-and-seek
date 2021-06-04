@@ -1,0 +1,235 @@
+General:
+  Prefix: "&cAmane >"
+  NoPerms: "&7Vous n'avez pas la permission de faire cette commande."
+  LayoutNotFound: "&7Impossible de trouver un layout de ce nom."
+  # This will be the replacement for the %DURATION% variable
+  TimeLayoutD: "%D%jour(s) %H%h %M%min et %S%sec"
+  TimeLayoutH: "%H%heure(s) %M%min et %S%sec"
+  TimeLayoutM: "%M%min et %S%sec"
+  TimeLayoutS: "%S% secondes"
+  FailedFetch: "&cImpossible de trouver l'UUID de %NAME%! Details dans la console."
+
+
+Ban:
+  Usage: "&7/ban <joueur> <raison>"
+  Done: "&c%NAME% &7a été banni(e) du serveur."
+  AlreadyDone: "&c%NAME% &7est déjà banni."
+  Exempt: "&7Vous ne pouvez pas ban &c%NAME%&7."
+  Layout:
+  - '&cVous avez été banni(e) définitivement du serveur.'
+  - '&7'
+  - "&cRaison &8\xbb &7%REASON%"
+  - "&cBanni(e) par &8\xbb &7%OPERATOR%"
+  - '&7'
+  - '&cVous pouvez faire un appel sur '
+  - "&Site &8\xbb &7***"
+  - "&cDiscord &8\xbb &7discord.gg/****"
+  Notification:
+  - "&cBannissement > &c%OPERATOR% &7a définitivement banni &c%NAME% &7pour &c%REASON%&7."
+
+Ipban:
+  Usage: "&7/banip <joueur/IP> <raison>"
+  Layout:
+  - '&cVous avez été banni(e) IP définitivement.'
+  - '&7'
+  - "&cRaison &8\xbb &7%REASON%"
+  - "&cBanni(e) par &8\xbb &7%OPERATOR%"
+  - '&7'
+  - '&cVous pouvez faire appel sur:'
+  - "&Site &8\xbb &7****"
+  - "&cDiscord &8\xbb &7discord.gg/***"
+  Notification:
+  - "&cBannissement > &c%OPERATOR% &7a banni IP définitivement &c%NAME% &7pour &c%REASON%&7."
+  IpNotCashed: "&7Il n'y a pas d'IP pour le joueur &c%NAME%&7."
+
+Tempban:
+  Usage: "&7/tempban <joueur> <Xmo/Xd/Xh/Xm/Xs> <raison>"
+  MaxDuration: "&7Vous n'êtes pas autorisé à bannir plus de &c%MAX%sec&7."
+  Layout:
+  - '&cVous avez été banni(e) temporairement du serveur.'
+  - '&7'
+  - "&cRaison &8\xbb &7%REASON%"
+  - "&cDurée &8\xbb &7%DURATION%"
+  - "&cBanni(e) par &8\xbb &7%OPERATOR%"
+  - '&7'
+  - '&cVous pouvez faire appel sur:'
+  - "&cSite &8\xbb &7****"
+  - "&cDiscord &8\xbb &7discord.gg/***"
+  Notification:
+  - "&cBannissement > &c%OPERATOR% &7a temporairement banni &c%NAME% &7pour &c%REASON%&7 pendant &c%DURATION%&7."
+
+Tempipban:
+  Usage: "&7/tempipban <joueur/IP> <Xmo/Xd/Xh/Xm/Xs> <raison>"
+  MaxDuration: "&7Vous n'êtes pas autorisé à bannir plus de &c%MAX%sec&7."
+  Layout:
+  - '&cVous avez été banni(e) IP temporairement du serveur.'
+  - '&7'
+  - "&cRaison &8\xbb &7%REASON%"
+  - "&cDurée &8\xbb &7%DURATION%"
+  - "&cBanni(e) par &8\xbb &7%OPERATOR%"
+  - '&7'
+  - '&cVous pouvez faire appel sur:'
+  - "&cSite &8\xbb &7***"
+  - "&cDiscord &8\xbb &7discord.gg/***"
+  Notification:
+  - "&cBannissement > &c%OPERATOR% &7a temporairement banni IP &c%NAME% &7pour &c%REASON%&7 pendant &c%DURATION%&7."
+
+Mute:
+  Usage: "&7/mute <joueur> <raison>"
+  Done: "&c%NAME% &7a été mute."
+  AlreadyDone: "&c%NAME% &7est déjà mute."
+  Exempt: "&7Vous n'avez pas la permission de mute &c%NAME%&7."
+  Layout:
+  - '&r'
+  - "&cVous avez été définitivement mute pour &7%REASON%&c."
+  - "&7◆ &cMute par: &7%OPERATOR%"
+  - '&cVous pouvez faire appel sur: &7****'
+  - '&r'
+  Notification:
+  - "&cMute > &c%OPERATOR% &7a mute définitivement &c%NAME% &7pour &c%REASON%&7."
+
+Tempmute:
+  Usage: "&7/tempmute <joueur> <Xmo/Xd/Xh/Xm/Xs> <raison>"
+  MaxDuration: "&7Vous n'êtes pas autorisé à mute plus de &c%MAX%sec&7."
+  Layout:
+  - '&r'
+  - "&cVous avez été mute temporairement pour &7%REASON%&c."
+  - "&7* &cMute par: &7%OPERATOR%"
+  - "&7* &cDurée: &7%DURATION%"
+  - '&cVous pouvez faire appel sur: &7yourserver.com'
+  - '&r'
+  Notification:
+  - "&cMute > &c%OPERATOR% &7a temporairement mute &c%NAME% &7pour &c%REASON%&7 pendant &c%DURATION%&7."
+
+Warn:
+  Usage: "&7/warn <name> <raison>"
+  Done: "&c%NAME% &7a été avertit."
+  Exempt: "&7Vous n'avez pas la permission d'avertir &c%NAME%&7."
+  Layout:
+  - '&r'
+  - '&cVous avez été avertit pour &7%REASON%&c.'
+  - '&7◆ &cAvertit par: &7%OPERATOR%'
+  - '&7Vous avez actuellement &c%COUNT% &7avertissement(s).'
+  - '&r'
+  Notification:
+  - "&cAvertissement > &c%OPERATOR% &7a avertit &c%NAME% &7pour &c%REASON%&7."
+
+Tempwarn:
+  Usage: "&7&o/tempwarn <joueur> <Xmo/Xd/Xh/Xm/Xs> <raison>"
+  MaxDuration: "&7Vous n'êtes pas autorisé à avertir plus de &c%MAX%sec&7."
+  Layout:
+  - '&r'
+  - '&cVous avez été avertit pour &7%REASON%&c.'
+  - '&7◆ &cAvertit par: &7%OPERATOR%'
+  - '&7◆ &cDurée: &7%DURATION%'
+  - '&7Vous avez actuellement &c%COUNT% &7avertissement(s).'
+  - '&r'
+  Notification:
+  - "&cAvertissement > &c%OPERATOR% &7a avertit &c%NAME% &7pour &c%REASON%&7 pendant &c%DURATION%&7."
+
+Kick:
+  Usage: "/kick <joueur> <raison>"
+  Done: "&c%NAME% &7a été kick du serveur."
+  NotOnline: "&c%NAME% &7n'est pas connecté."
+  Exempt: "&7Vous n'avez pas la permission de kick &c%NAME%&7."
+  Layout:
+  - '&cVous avez été kick du serveur.'
+  - '&7'
+  - "&cRaison &8\xbb &7%REASON%"
+  - "&cKick par &8\xbb &7%OPERATOR%"
+  - '&7'
+  Notification:
+  - "&cKick > &c%OPERATOR% &7a kick &c%NAME% &7pour &c%REASON%&7."
+
+UnBan:
+  Usage: "&7/unban <joueur/IP>"
+  NotPunished: "&c%NAME% &7n'est pas banni."
+  Done: "&a%NAME% &7a été débanni(e)."
+
+UnMute:
+  Usage: "&7/unmute <joueur>"
+  NotPunished: "&c%NAME% n'est pas mute."
+  Done: "&a%NAME% &7a été demute."
+
+UnWarn:
+  Usage: "&7/unwarn <ID> ou /unwarn clear <joueur>"
+  NotFound: "&7Impossible de trouver l'ID &e#%ID%&7."
+  Done: "&7L'avertissement &e#%ID% &7a été supprimé."
+  Clear:
+    Empty: "&c%NAME% &7n'a pas d'avertissement(s)."
+    Done: "&7Supprimé(s): &a%COUNT% &7avetissement(s)."
+
+UnPunish:
+  Usage: "&7/unpunish <ID>"
+  NotFound: "&7Impossible de trouver la sentence &e#%ID%&7."
+  Done: "&7La sentence &a#%ID% &7a été supprimée."
+
+
+Banlist:
+  Usage: "&7/banlist <page>"
+  OutOfIndex: "&7Il n'y a pas de page &c%PAGE%&7."
+  NoEntries: "&7TIl n'y a pas de bannissements"
+  Header:
+  - "&7* &cBanlist:"
+  - "&c&oJoueur/IP &8| &e&oDurée &8| &7&oBanni par"
+  - "&c&oType &8> &7&oRaison"
+  - "&7"
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&c%TYPE% &8> &7&o%REASON%"
+  - "&7"
+  Footer: "&7Page &e%CURRENT_PAGE% &7/ &e%TOTAL_PAGES% &8| &7Bans totaux: &e%COUNT%"
+  PageFooter: "&7Faites &e/banlist %NEXT_PAGE% &7pour voir la page suivante"
+
+History:
+  Usage: "&7/history <joueur/IP> <page>"
+  OutOfIndex: "&7Il n'y a pas de page &c%PAGE%&7."
+  NoEntries: "&7Impossible de trouver l'historique de &c%NAME%&7."
+  Header:
+  - "&7* &cHistorique de %NAME%:"
+  - "&c&oNom &8| &e&oDurée &8| &7&oModérateur"
+  - "&c&oType &8> &7&oReason"
+  - "&7"
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&c%TYPE% &8> &7&o%REASON%"
+  - "&7"
+  Footer: "&7Page &e%CURRENT_PAGE% &7/ &e%TOTAL_PAGES% &8| &7Entrées: &e%COUNT%"
+  PageFooter: "&7Faites &e/history %NAME% %NEXT_PAGE% &7pour voir la page suivante"
+
+Warns:
+  Usage: "&7/warns <joueur> <page>"
+  OutOfIndex: "&7Il n'y a pas de page &c%PAGE%&7."
+  NoEntries: "&c%NAME% &7n'a pas d'avertissement."
+  Header:
+  - "&7* &cAvertissement(s) de %NAME%:"
+  - "&c&oNom &8| &e&oDurée &8| &7&oAvertit par"
+  - "&c&o#ID &8> &7&oRaison"
+  - "&7"
+  Entry:
+  - "&8[&e%DATE%&8]"
+  - "&c%NAME% &8| &e%DURATION% &8| &7%OPERATOR%"
+  - "&c&l#%ID% &8> &7&o%REASON%"
+  - "&7"
+  Footer: "&7Page &e%CURRENT_PAGE% &7/ &e%TOTAL_PAGES% &8| &7Avertissement(s) totaux: &e%COUNT%"
+  PageFooter: "&7Faites &e/warns %NAME% %NEXT_PAGE% &7pour voir la page suivante"
+
+ChangeReason:
+  Usage: "&7/change-reason <ID ou ban/mute JOUEUR> <nouvelle raison>"
+  Done: "&7La sentence &a#%ID% &7a été mise à jour."
+  NotFound: "&7Cette sentence n'a pas pu être trouvée."
+
+Check:
+  BanReason: "  &cRaison &8\xbb &7%REASON%"
+  MuteReason: "  &cRaison &8\xbb &7%REASON%"
+  Usage: "&7/check <joueur>"
+  Header: "&7Infos de &e%NAME%"
+  UUID: "&cUUID &8\xbb &7%UUID%"
+  IP: "&cIP &8\xbb &7%IP%"
+  Geo: "&cPays &8\xbb &7%LOCATION%"
+  Mute: "&cMute &8\xbb &7%DURATION%"
+  Ban: "&cBanni(e) &8\xbb &7%DURATION%"
+  Warn: "&cAvertissement(s) &8\xbb &7%COUNT%"
+  NotFound: "&7Impossible de trouver &c%NAME%&7."

@@ -1,0 +1,146 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.2-Fixes-V8b
+
+game, string, 800777616974696E67
+spawn, location, 8605776F726C6480FF0000000181046E616D65208005776F726C640178093FDF992F193A05EC0179094024000000000000017A09C0108117EA4B255705706974636808C0BF45DB0379617708C33392E0
+spawnh, location, 8605776F726C6480FF0000000181046E616D65208005776F726C64017809402575A7543BF3060179094026000000000000017A09402C8C612B4F4424057069746368083F9EF6F203796177083EE69446
+spec.<none>, boolean, 01
+totalgames.kiba_san, double, 4000000000000000
+totalgames.kibalab, double, 4000000000000000
+wins.hider.kiba_san, long, 0000000000000000
+wins.hider.kibalab, double, 3FF0000000000000
+wins.hunter.kiba_san, double, 3FF0000000000000
+wins.hunter.kibalab, long, 0000000000000000
+
+game, string, 800777616974696E67
+spec.kiba_san, null, 
+spec.kibalab, null, 
+game, string, 80087374617274696E67
+playercount, integer, 00000002
+hider, offlineplayer, 82046E616D652080084B6962615F53616E0475756964800455554944820C6C6561737453696742697473048E980DBE1CD0E8B30B6D6F737453696742697473045E84702B8267494F
+game, string, 800773746172746564
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+cooldown.kibalab, long, 000000000000000A
+cooldown.kibalab, double, 4022000000000000
+cooldown.kibalab, double, 4020000000000000
+cooldown.kibalab, double, 401C000000000000
+cooldown.kibalab, double, 4018000000000000
+cooldown.kibalab, double, 4014000000000000
+cooldown.kibalab, double, 4010000000000000
+cooldown.kibalab, double, 4008000000000000
+cooldown.kibalab, double, 4000000000000000
+cooldown.kibalab, double, 3FF0000000000000
+cooldown.kibalab, double, 0000000000000000
+cooldown.kibalab, null, 
+spec.kibalab, boolean, 01
+spec.<none>, boolean, 01
+playercount, double, 3FF0000000000000
+wins.hunter.kiba_san, double, 4000000000000000
+totalgames.kiba_san, double, 4008000000000000
+totalgames.kibalab, double, 4008000000000000
+hider, null, 
+playercount, null, 
+game, string, 800866696E6973686564
+spec.<none>, boolean, 01
+game, string, 800777616974696E67
+spec.kiba_san, null, 
+spec.kibalab, null, 
+game, string, 800777616974696E67
+spec.kibalab, null, 
