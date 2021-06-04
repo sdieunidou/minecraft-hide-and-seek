@@ -1,5 +1,5 @@
 options:
-	pref: &c&lCubika >&7
+	pref: &c&lServeur >&7
 
 command /cache [<text>] [<player>]:
 	trigger:
@@ -21,6 +21,7 @@ command /cache [<text>] [<player>]:
 					stop
 				set {_count} to 0
 				loop all players:
+					clear {cooldown.%loop-player%}
 					add 1 to {_count}
 				if {_count} > 1:
 					if {game} is not "started":
@@ -97,10 +98,10 @@ command /cache [<text>] [<player>]:
 					broadcast "{@pref} &cErreur, pas assez de joueurs"
 					set {game} to "waiting"
 			else:
-				send "&cErreur, la partie est d�j� commencée"
+				send "&cErreur, la partie est déjà commencÃ©e"
 		if arg-1 is "stop":
 			if {playercount} > 1:
-				broadcast "{@pref} Les &a&lCachés &7ont gagnés"
+				broadcast "{@pref} Les &a&lCachÃ©s &7ont gagnÃ©s"
 				loop all players:
 					if loop-player is not {hider}:
 						if {spec.%loop-player%} is not set:
@@ -110,21 +111,21 @@ command /cache [<text>] [<player>]:
 							add {_randum} to {coins.%loop-player%}
 							add 1 to {winshider.%loop-player%}
 							send "&e----------------------------------" to loop-player
-							send "&6Tu as gagné &a+%{_randum}% Bambou(s)" to loop-player
-							send "&6Gagner en tant que &aCaché" to loop-player
+							send "&6Tu as gagnÃ© &a+%{_randum}% Bambou(s)" to loop-player
+							send "&6Gagner en tant que &aCachÃ©" to loop-player
 							if {boost} is set:
 								send "&6x%{boost}% Boost &epar %{booster}%" to loop-player
 							send "&e----------------------------------" to loop-player
 
 			else:
-				broadcast "{@pref} Le &c&lChasseur &7a gagné"
+				broadcast "{@pref} Le &c&lChasseur &7a gagnÃ©"
 				set {_randum} to a random integer between 3 and 5
 				if {boost} is set:
 					set {_randum} to {_randum} * {boost}
 				add {_randum} to {coins.%{hider}%}
 				add 1 to {winshunter.%{hider}%}
 				send "&e----------------------------------" to {hider}
-				send "&6Tu as gagné &a+%{_randum}% Bambou(s)" to {hider}
+				send "&6Tu as gagnÃ© &a+%{_randum}% Bambou(s)" to {hider}
 				if {boost} is set:
 					send "&6x%{boost}% Boost &epar %{booster}%" to {hider}
 				send "&6Gagner en tant que &cChasseur" to {hider}
@@ -164,11 +165,11 @@ command /cache [<text>] [<player>]:
 
 on rightclick with green music disc:
 	if name of player's tool is "&aFaire du son":
-		make player execute command "/�sound"
+		make player execute command "/§sound"
 
 on rightclick with clock:
 	if name of player's tool is "&cTP":
-		make player execute command "/�tpto"
+		make player execute command "/§tpto"
 
 on rightclick:
 	if {spec.%player%} is set:
@@ -186,7 +187,7 @@ command /tpto [<player>]:
 		else:
 			send "&cErreur tu ne peux pas, tu n'es pas en spectateur"
 
-command /�sound:
+command /§sound:
 	trigger:
 		if {cooldown.%player%} is not set:
 			play raw sound "mob.bat.death" at player with pitch 1 volume 1
@@ -230,7 +231,7 @@ on damage:
 					set {spec.%victim%} to true
 					make console execute command "/cache spec %victim%"
 					remove 1 from {playercount}
-					broadcast "{@pref} &l%victim% &r&7à été trouvé"
+					broadcast "{@pref} &l%victim% &r&7Ã  Ã©tÃ© trouvÃ©"
 					if {playercount} = 1:
 						make console execute command "/cache stop"
 
