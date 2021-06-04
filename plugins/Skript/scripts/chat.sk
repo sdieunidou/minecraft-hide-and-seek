@@ -10,5 +10,5 @@ on chat:
 	else:
 		loop all players:
 			if {spec.%loop-player%} is set:
-				send "&7[&d%{_totalwins}%&7] &7(SPEC) %{_rank}% %player%&f: %message%" to loop-player
+				send "&7[&d%{_totalwins}%&7] &7(SPEC) %player%&f: %message%" to loop-player
 
