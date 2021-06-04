@@ -1,8 +1,3 @@
-on script load:
-	load non-relative yaml "/home/Minecraft/Hub/plugins/yaml/rank.yml" as "/home/Minecraft/Hub/plugins/yaml/rank.yml"
-	load non-relative yaml "/home/Minecraft/Hub/plugins/yaml/cachestats.yml" as "/home/Minecraft/Hub/plugins/yaml/cachestats.yml"
-
-
 on chat:
 	cancel event
 	if {spec.%player%} is not set:
