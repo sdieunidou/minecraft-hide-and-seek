@@ -8,7 +8,7 @@ Created by @ImoriSama
 * [YouTube](https://www.youtube.com/c/IMORISAMA/)
 
 ## Server Installation
-* To start, you have to install the server on a machine. Being a partner of [MTX-Serv](https://mtxserv.com/fr/hebergeur-serveur-minecraft), and mainly doing the server for them, I therefore advise you to take a server from them and install it in 1 click in the "plugin pack" section in the server panel. If you choose this path, you can go to the [next section](https://github.com/sdieunidou/minecraft-hide-and-seek/tree/master#server-characteristics)
+* To start, you have to install the server on a machine. Being a partner of [MTX-Serv](https://mtxserv.com/fr/hebergeur-serveur-minecraft), and mainly doing the server for them, I therefore advise you to take a server from them and install it in 1 click in the "plugin pack" section in the server panel. If you choose this path, you can go to the [next section](https://github.com/sdieunidou/minecraft-hide-and-seek#server-characteristics)
 
 * You can still download the files yourself using the button as shown in the image below:
 
