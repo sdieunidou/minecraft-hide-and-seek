@@ -1,5 +1,5 @@
 options:
-	pref: &c&lCubika >&7
+	pref: &c&lServeur >&7
 
 on load:
 	set {game} to "waiting"
@@ -73,10 +73,10 @@ command /tabrefresh:
 		loop all players:
 			add 1 to {_count}
 		loop all players:
-			set tab header to "&f&k!!&f &cBienvenue sur &6Cubika &f&k!!&f %nl%%loop-player% %nl% &5" and footer to "&5 %nl%&3Serveur: &b%server name% %nl%&7&oEn Jeu: &a%{_count}%&7/&a%max players%" for loop-player
+			set tab header to "&f&k!!&f &cBienvenue sur &6Serveur &f&k!!&f %nl%%loop-player% %nl% &5" and footer to "&5 %nl%&3Serveur: &b%server name% %nl%&7&oEn Jeu: &a%{_count}%&7/&a%max players%" for loop-player
 			wait 1 tick
 		if command sender is not console:
-			message "&bRaffraichissement des tabLists terminé avec succès." to the command sender
+			message "&bRaffraichissement des tabLists terminÃ© avec succÃ¨s." to the command sender
 
 command /setspawn [<text>]:
 	permission: *
