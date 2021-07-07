@@ -1,6 +1,6 @@
 Free Minecraft Hide and Seek / Cache Cache Server Template, created by @ImoriSama - No commercial use allowed without permission
 
-# Preconfigured Minecraft Faction Server
+# Preconfigured Hide And Seek Server
 
 Created by @ImoriSama 
 
